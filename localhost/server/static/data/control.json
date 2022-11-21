@@ -1,0 +1,68 @@
+{
+    "fh37tf5gjs": {
+        "ip_arduino": "101",
+        "soundfile": "hb_1.wav",
+        "heartrate": "30",
+        "heartrate_mr": "false",
+        "speed": "100",
+        "midi": "",
+        "follow": "false",
+        "comment": "Inloop",
+        "collapse": "false"
+    },
+    "or2xxdc5v3": {
+        "ip_arduino": "101",
+        "soundfile": "hb_1.wav",
+        "heartrate": "0",
+        "heartrate_mr": "false",
+        "speed": "110",
+        "midi": "4Az",
+        "follow": "false",
+        "comment": "",
+        "collapse": "false"
+    },
+    "fh37tf5efs": {
+        "ip_arduino": "102",
+        "soundfile": "hb_2.wav",
+        "heartrate": "30",
+        "heartrate_mr": "false",
+        "speed": "100",
+        "midi": "",
+        "follow": "false",
+        "comment": "",
+        "collapse": "false"
+    },
+    "oh3ggrwu3v": {
+        "ip_arduino": "103",
+        "soundfile": "hb_3.wav",
+        "heartrate": "30",
+        "heartrate_mr": "false",
+        "speed": "110",
+        "midi": "4Az",
+        "follow": "false",
+        "comment": "",
+        "collapse": "false"
+    },
+    "583wk4e818": {
+        "ip_arduino": "104",
+        "soundfile": "hb_4.wav",
+        "heartrate": "30",
+        "heartrate_mr": "false",
+        "speed": "110",
+        "midi": "4Az",
+        "follow": "false",
+        "comment": "",
+        "collapse": "false"
+    },
+    "8b65w2rmzv": {
+        "ip_arduino": "105",
+        "soundfile": "hb_5.wav",
+        "heartrate": "30",
+        "heartrate_mr": "false",
+        "speed": "110",
+        "midi": "4Az",
+        "follow": "false",
+        "comment": "",
+        "collapse": "false"
+    }
+}

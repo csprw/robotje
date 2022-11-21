@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Robotje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Necissary scripts -->
+    {% load static %}
+
+    <!-- original jquery -->
+    <!-- <script src="{% static "js/jquery.min.js" %}" type="text/javascript"></script> -->
+    <script src="{% static "js/jquery.js" %}" type="text/javascript"></script>
+    <script src="{% static "js/jquery-ui.min.js" %}" type="text/javascript"></script>
+
+    <script src="{% static "js/mqttws31.js" %}" type="text/javascript"></script>
+    <script src="{% static "js/config.js" %}" type="text/javascript"></script>
+    <script src="{% static "js/send_to_pi.js" %}" type="text/javascript"></script>
+    <script src="{% static "js/webmidi.min.js" %}" type="text/javascript"></script>
+    <script src="{% static "js/index.js" %}" type="text/javascript"></script>
+
+    <!-- CSS -->
+    <link  href="{% static "css/index.css" %}" rel="stylesheet">
+
+    <!-- Flavicon -->
+    <link rel="shortcut icon" href="#">
+
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div id="headleft">
+        <!-- <div><input type='text' id='status' size="80" disabled /></div> -->
+        <div id="ledcontainer"></div>
+      </div>
+
+      <div id="headright">
+        <!-- <div style="display: inline-block">
+          <button id="check" type="button" onclick="reboot_pi();">Reboot</button>
+        </div> -->
+        <div style="display: inline-block">
+          <button id="save" type="button">Save Table</button>
+        </div>
+        <div style="display: inline-block">
+          <button id="check" type="button" onclick="send_to_all_arduinos('check');">Check Clients</button>
+        </div>
+      </div>
+    </div>
+
+    <br><br><br><br>
+    <h1 style="text-align: center;">Send messages</h2>
+
+    <!-- Main table -->
+    <table id="table">
+      <tr id="table_headers" >
+        <td id="collapsecol">C</td>
+
+        <!-- Depricated -->
+        <!-- <td id="timercol">timer</td>
+        <td id="countdowncol">countdown</td> -->
+        <td class="ip_arduino_class">ip</td>
+        <td><b>Soundfile</b></td>
+        <td><b>Heartrate</b></td>
+        <td><b>Speed</b></td>
+        <td><b>midi</b></td>
+        <td id="followcol">F</td>
+        <td><b>comment</b></td>
+        <td><b>Send </b></td>
+      </tr>
+    </table>
+
+    <!-- Buttons to add/delete row -->
+    <div id="addrowcontainer">
+      <button id="addrow" type="button"><b>+</b></button>
+      <button id="delrow" type="button"><b>-</b></button>
+    </div>
+
+
+    <!-- Audioplayers -->
+    <div class="audiowrapper_large">
+      <div class="audiowrapper">
+        <h5>audioplayer101</h5>
+        <audio class="audiosmall" id="audioplayer101" controls preload="none">
+          <source src="{% static "/media/hb_1.wav" %}">
+        </audio>
+         <input type="number"  readonly=true min="1" max="500" class="audiovisualizer" id="audiovisualizer101"> 
+      </div>
+
+      <div class="audiowrapper">
+        <h5>audioplayer101</h5>
+        <audio class="audiosmall" id="audioplayer102" controls preload="none">
+          <source src="{% static "/media/hb_1.wav" %}">
+        </audio>
+         <input type="number"  readonly=true min="1" max="500" class="audiovisualizer" id="audiovisualizer101"> 
+      </div>
+
+      <div class="audiowrapper">
+        <h5>audioplayer101</h5>
+        <audio class="audiosmall" id="audioplayer103" controls preload="none">
+          <source src="{% static "/media/hb_1.wav" %}">
+        </audio>
+         <input type="number"  readonly=true min="1" max="500" class="audiovisualizer" id="audiovisualizer101"> 
+      </div>
+
+      <div class="audiowrapper">
+        <h5>audioplayer101</h5>
+        <audio class="audiosmall" id="audioplayer104" controls preload="none">
+          <source src="{% static "/media/hb_1.wav" %}">
+        </audio>
+         <input type="number"  readonly=true min="1" max="500" class="audiovisualizer" id="audiovisualizer101"> 
+      </div>
+
+      <div class="audiowrapper">
+        <h5>audioplayer101</h5>
+        <audio class="audiosmall" id="audioplayer105" controls preload="none">
+          <source src="{% static "/media/hb_1.wav" %}">
+        </audio>
+         <input type="number"  readonly=true min="1" max="500" class="audiovisualizer" id="audiovisualizer101"> 
+      </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class=scarybuttons >
+        <!-- Rounded switch -->
+        <label class="switch" >
+          <input type="checkbox" onchange="send_to_all_arduinos('check')">
+          <span class="slider round"></span>
+        </label>
+        
+        <input type="button" style="width: 75px !important; margin-top:0.5em" id="webmidicheck" name="webmidicheck" value="MidiInput" />
+
+      </div>
+
+      <!-- Depricated -->
+      <!-- <div id=slidecontainer>
+        <input id="slide" type="range" min="1" max="100" step="1" value="90" onchange="send_main_vol(this.value)">
+        <div id="sliderAmount">90</div>
+      </div> -->
+
+      <div id=buttoncontainer>
+        <button class="music" onclick="stop_sounds()">&#9726;</button>
+        <!-- <button class="music" onclick="send_main('pause')">&#9646;&#9646;</button>
+        <button class="music" onclick="send_main('unpause')">&#9654;</button> -->
+      </div>
+      
+      <!-- Shows status of broker -->
+      <div><input type='text' id='status' size="80" disabled /></div>
+    </div>
+    
+    <br><br><br>
+    <ul id='ws' style="font-family: 'Courier New', Courier, monospace; margin-bottom: 150px;"></ul>
+
+  </body>
+</html>
