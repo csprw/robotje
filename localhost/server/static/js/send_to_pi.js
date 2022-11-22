@@ -80,20 +80,6 @@ function onMessageArrived(message) {
 		
 	}
 
-	// In case a raspberry has connection to hr soundfile
-	// else if (topic == "server/2") {
-	// 	console.log("[send_to_pi] HR rpi connected: ", topic, payload);
-	// 	var thisled = document.getElementById(payload);
-	// 	thisled.classList.add("green");
-	// }
-
-	// In case a raspberry has connection to hr soundfile
-	// else if (topic == "server/3") {
-	// 	console.log("[send_to_pi] HR rpi connected: ", topic, payload);
-	// 	var thisled = document.getElementById(payload);
-	// 	thisled.classList.add("supergreen");
-	// }
-
 	// In case a raspberry disconnects
 	else if (topic == "server/0") {
 		console.log("[send_to_pi] arduino connection lost: ", topic, payload);
@@ -115,7 +101,6 @@ function onMessageArrived(message) {
 			
 			var hr = splitted[1];
 			var ip_nr = splitted[0].split('.')[3]
-
 			// Put the value in audiovisualizers
 			var audiovisualizer_id = "audiovisualizer" + ip_nr.toString();
 			var visualizer = document.getElementById(audiovisualizer_id);

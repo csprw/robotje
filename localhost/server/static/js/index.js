@@ -265,6 +265,7 @@ function check_for_play_updates(audioplayer_id, heartrate) {
             var soundfile = myFilenames[audioplayer_id];
             var audioplayer = document.getElementById(audioplayer_id);
 
+            // TODO: clashing real HRs
             pause_player(audioplayer, soundfile, heartrate);
 
             // Wait a short moment and continue
@@ -275,7 +276,7 @@ function check_for_play_updates(audioplayer_id, heartrate) {
                 // Send move commando to robot with new hr
                 var ip_arduino = "192.168.0." + audioplayer_id.slice(-3,audioplayer_id.length);
                 send_to_arduino(ip_arduino, "start_moving", heartrate, -1);
-            }, 100);
+            }, 50);
         }
     }
 }

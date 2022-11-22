@@ -256,7 +256,7 @@ button.music:hover {
 #footer {
     overflow: hidden;
     background-color: rgb(126, 126, 126);
-    background-color: #965896c3;
+    background-color: #603860;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -485,6 +485,7 @@ select {
     display: inline-block; 
     color: white;
     margin-left: 4vw;
+    margin-bottom: 3em;
 }
 .audiosmall {
     width: 14vw;
