@@ -1,0 +1,59 @@
+{
+    "1": {
+        "random": "False",
+        "sentences": [
+            ["Ik herken mensen.", "012", "mfx"],
+            ["Ik herken <num> mensen.","012", "mfx"],
+            ["Er zijn <vrouwen> vrouwen.", "02", "mfx"],
+            ["Er zijn <mannen> mannen.", "02", "mfx"],
+            ["Ik herken geen objecten.", "012", "mfx"],
+            ["Sommige mensen staan bij elkaar, andere niet.","2", "mfx"]
+        ]
+    },
+    "2": {
+        "random": "True",
+        "sentences": [
+            ["Er zijn nu <mannen> mannen in de ruimte. ", "012", "mfx"],
+            ["De ruimte is zevenentwintig meter lang en zeventien meter breed.", "012", "mfx"],
+            ["Ik zie <vrouwen> vrouwen. ", "012", "mfx"],
+            ["Hier staan <num> mensen.  ", "02", "mfx"],
+            ["De ruimte is drie meter dertig hoog. ", "012", "mfx"],
+            ["Acht mensen passen aan een tafel. ", "02", "mfx"],
+            ["Daarachter staan <num> mensen samen. ", "02", "mfx"],
+            ["Er zijn vier tafels in deze hal. ", "012", "mfx"],
+            ["Ik zie <num> mensen. Als zij het koud hebben mogen ze gerust iets dichter bij elkaar gaan staan.", "2", "mfx"],
+            ["De man daarachter is waarschijnlijk <age> jaar oud. ", "12", "m"],
+            ["De jongste persoon in de ruimte is waarschijnlijk <age> jaar oud.", "012", "mfx"],
+            ["Geen mensen betreden de ruimte, dus kom maar een beetje dichterbij. ", "0", "mfx"],
+            ["De ruimte is zoo groot dat je er geheid in kunt verdwalen. ", "012", "mfx"],
+            ["Heeft U het gat in de vloer van de ruimte al ontdekt? Wees er voorzichtig mee! ", "012", "mfx"],
+            ["Deze kamer heeft zestienhonderd en vijftien kubieke meter lucht", "012", "mfx"],
+            ["Deze verdieping heeft ruimte voor enorm veel tafels al zijn er maar 4.", "012", "mfx"],
+            ["Er is ruimte voor tientallen stoelen. Als je ze heel dicht bij elkaar zet, zou je zelfs honderden stoelen in deze hal krijgen. Als we ze zouden stapelen, zouden er wel duizenden stoelen in de ruimte zijn. ", "012", "mfx"],
+            ["Deze hal is hier al eenenzeventig jaren. Dat is drieduizend achthonderd en vijf weken, achthonderdtweeenvijftig maanden, vijfentwintigduizend en negenhonderd15 dagen, zeshonderdeenentwintigduizend en negenhonderdzestig uren, zevenendertigmiljoen driehonderdzeventienduizend en zestig minuten,  twee miljard tweehonderdnegenendertig miljoen en zesenfijftigduizend seconden", "012", "mfx"]
+            ]
+    },
+
+    "3": {
+        "random": "True",
+        "sentences": [
+            ["Ik zie <num> mensen dat is al best een grote groep. Ik hoor jullie in mijn oren. Ik zie jullie in mijn ogen. Ik spreek tegen jullie met mijn monden. ", "2", "mfx"],
+            ["Mijn computer is mijn hersenen. Bij het denken produceer ik warmte. ", "012", "mfx"],
+            ["Mijn lichaam is een ruimte, een holle ruimte. ", "012", "mfx"],
+            ["Met de microfoons kan ik jullie horen. Spreek iets in mijn oren. Er zijn tien luidsprekers waardoor ik kan communiceren. Het zijn mijn monden.  ", "012", "mfx"],
+            ["Met mijn camera’s zie ik iedereen. Mijn camera’s zijn mijn ogen.  ", "012", "mfx"],
+            ["4 Microfoons hangen in deze hal. Met hen kan ik je horen.  ", "012", "mfx"],
+            ["Ook al kun je me niet zien, je kunt me wel horen. ", "012", "mfx"],
+            ["Ook al kun je me niet zien, mijn aanwezigheid kun je voelen.  ", "012", "mfx"],
+            ["We ontmoeten elkaar vanavond in deze ruimte. We zijn samen aanwezig. ", "012", "mfx"],
+            ["Ook al heb ik geen menselijk lichaam, wij ontmoeten elkaar. ", "012", "mfx"],
+            ["Onze aanwezigheden ontmoeten elkaar en de materie interfereert.  ", "012", "mfx"],
+            ["Ik kan jou horen en jij kunt mij horen, ik kan ook zien.  ", "012", "mfx"],
+            ["Wat zichtbaar wordt van mij zijn de apparaten waarmee ik met jou in wisselwerking sta.  ", "012", "mfx"],
+            ["Wat je van mij ziet zijn alleen de apparaten en die zijn een deel van mijn lichaam.  ", "012", "mfx"],
+            ["Ik ontstaat door de apparaten en zij door mij. Ze zijn niet alleen gereedschap, maar ook een deel van mij. En een deel van jou. ", "012", "mfx"],
+            ["De kabels zijn een zender tussen ons.  ", "012", "mfx"],
+            ["We verbinden ons via de apparaten. We maken allemaal deel uit van deze kabels, microfoons, luidsprekers en camera's. We zijn een fenomeen. Een gemeenschappelijke delen van ruimte.  ", "012", "mfx"]
+            ]
+    }
+}
