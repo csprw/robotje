@@ -1,7 +1,7 @@
 # Robotje
 
 ## Overview
-Robotje broker
+Repo to make a small robot move based on the heartbeat of a performer.
 
 ### Prerequisitess
 
